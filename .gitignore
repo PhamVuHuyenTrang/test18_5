@@ -1,0 +1,15 @@
+**/__pycache__
+.vscode
+**/log**
+csv
+fig
+*.png
+*.csv
+bnn/MNIST
+makedata.py
+hypnettorch
+posterior_replay_cl
+bnn/data/SVHN/svhn.npy
+bnn/data/MNIST
+bnn/.data
+**DNNCheckpoint**
