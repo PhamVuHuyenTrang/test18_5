@@ -53,9 +53,9 @@ if __name__ == "__main__":
         X_test = X_test.reshape((X_test.shape[0], num_feature))
         y_test = y_test.reshape((X_test.shape[0], 1))
         if task_id == 0:
-            HS.update_vbs(X_train, y_train, epochs = 1)
+            HS.update_vbs(X_train, y_train, epochs = 50000)
         else:
-            HS.update_vbs(X_train, y_train, epochs = 1)
+            HS.update_vbs(X_train, y_train, epochs = 10000)
         HS.test_real_data(X_test, y_test, log_odds)
         logger.info(f'\n********** TASK {task_id} **********')
         mcae = HS.test_abserr[task_id]
